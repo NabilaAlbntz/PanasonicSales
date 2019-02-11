@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.actvity.store.item.StoreItemActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                android:id="@+id/tvHintSurveyItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_store_survey_notice_title"
+                android:textAppearance="@style/TextAppearance.Bold.Semi"
+                android:textColor="@color/color_grey_dark"
+                android:textSize="@dimen/text_medium" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/tilDate"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_store_survey_history_date_of_survey"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:paddingRight="@dimen/padding_24dp"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_survey_actual_picture"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@drawable/bg_btn_rounded_dotted_grey">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/ivItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="6dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lllUploadFile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivCamera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_upload_photo" />
+
+                        <TextView
+                            android:id="@+id/tvDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:text="@string/label_store_survey_upload_picture"
+                            android:textAppearance="@style/TextAppearance.Regular"
+                            android:textColor="@color/color_grey_soft" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_survey_type_board"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spSignBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:minHeight="@dimen/height_spinner"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/padding_8dp" />
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilSignBoard"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_sign_board_optional"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etSignBoardOptional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:paddingRight="@dimen/padding_24dp"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_survey_product"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:minHeight="@dimen/height_spinner"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/padding_8dp" />
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilProduct"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_sign_product_optional"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etProductOptional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:paddingRight="@dimen/padding_24dp"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_survey_project_banner"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spProjectBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:minHeight="@dimen/height_spinner"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/padding_8dp" />
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/tilProjectBanner"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_sign_project_banner_optional"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etProjectBannerOptional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:paddingRight="@dimen/padding_24dp"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/label_store_survey_size_banner"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.Bold.Semi"
+                android:textColor="@color/color_blue"
+                android:textSize="@dimen/text_extra_small" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_store_survey_length"
+                        android:textColorHint="@color/color_grey_soft">
+
+                        <EditText
+                            android:id="@+id/etDimensionLength"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_fill_edit_text"
+                            android:inputType="numberDecimal"
+                            android:minHeight="@dimen/et_min_height"
+                            android:paddingRight="@dimen/padding_24dp"
+                            android:textAppearance="@style/TextAppearance.Bold.Semi"
+                            android:textColor="@color/color_grey_dark"
+                            android:textSize="@dimen/text_small"
+                            tools:text="1" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="@dimen/margin_4dp"
+                        android:text="@string/label_store_survey_dimension"
+                        android:textAppearance="@style/TextAppearance.Bold.Semi"
+                        android:textColor="@color/color_grey_soft"
+                        android:textSize="@dimen/text_medium" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_store_survey_width"
+                        android:textColorHint="@color/color_grey_soft">
+
+                        <EditText
+                            android:id="@+id/etDimensionWidth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_fill_edit_text"
+                            android:inputType="numberDecimal"
+                            android:minHeight="@dimen/et_min_height"
+                            android:paddingRight="@dimen/padding_24dp"
+                            android:textAppearance="@style/TextAppearance.Bold.Semi"
+                            android:textColor="@color/color_grey_dark"
+                            android:textSize="@dimen/text_small"
+                            tools:text="1" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="@dimen/margin_4dp"
+                        android:text="@string/label_store_survey_dimension"
+                        android:textAppearance="@style/TextAppearance.Bold.Semi"
+                        android:textColor="@color/color_grey_soft"
+                        android:textSize="@dimen/text_medium" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_store_survey_side"
+                        android:textColorHint="@color/color_grey_soft">
+
+                        <EditText
+                            android:id="@+id/etDimensionSide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_fill_edit_text"
+                            android:inputType="numberDecimal"
+                            android:minHeight="@dimen/et_min_height"
+                            android:textAppearance="@style/TextAppearance.Bold.Semi"
+                            android:textColor="@color/color_grey_dark"
+                            android:textSize="@dimen/text_small"
+                            tools:text="1" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_survey_type_request"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spTypeRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:minHeight="@dimen/height_spinner"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/padding_8dp" />
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/tilTypeRequest"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_sign_type_request_optional"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etTypeRequestOptional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:paddingRight="@dimen/padding_24dp"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_survey_note"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@drawable/bg_outline_edit_text"
+                    android:gravity="top"
+                    android:hint="@string/label_store_survey_note_hint"
+                    android:minHeight="100dp"
+                    android:padding="@dimen/padding_medium"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textColorHint="@color/color_grey_soft"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/etNoteHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:gravity="top"
+                    android:hint="@string/label_store_survey_note_hint"
+                    android:padding="@dimen/padding_medium"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textColorHint="@color/color_grey_soft"
+                    android:textSize="@dimen/text_small" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/tilTaskStatus"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_history_task_status_tugas"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etTaskStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:minHeight="@dimen/et_min_height"
+                    android:paddingRight="@dimen/padding_24dp"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_blue_soft"
+                    android:textSize="@dimen/text_large"
+                    tools:text="1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_min_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_32dp"
+                android:background="@drawable/bg_btn_store"
+                android:paddingLeft="@dimen/padding_24dp"
+                android:paddingRight="@dimen/padding_24dp"
+                android:text="@string/label_store_survey_submit"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:textColor="@color/color_white" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "655737077415",
+    "firebase_url": "https://panasonic-f0f33.firebaseio.com",
+    "project_id": "panasonic-f0f33",
+    "storage_bucket": "panasonic-f0f33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655737077415:android:01dddbeaf11f83b3",
+        "android_client_info": {
+          "package_name": "pogumedia.panasonic.sales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655737077415-9a3u10s03k3l7561vmmhaulkd7qn9mua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwJL6ivBvEiiLNaWPf5tOmQWknOaZV2Fs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655737077415:android:167c2b18bfbf0871",
+        "android_client_info": {
+          "package_name": "com.pogumedia.teknisi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655737077415-9a3u10s03k3l7561vmmhaulkd7qn9mua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwJL6ivBvEiiLNaWPf5tOmQWknOaZV2Fs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

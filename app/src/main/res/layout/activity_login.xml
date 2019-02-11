@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_gradient"
+    tools:context=".ui.actvity.login.LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_32dp"
+                android:text="Pogumedia Client"
+                android:textAppearance="@style/TextAppearance.Regular"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_32dp"
+                android:text="@string/label_login_title"
+                android:textAppearance="@style/TextAppearance.Regular"
+                android:textColor="@color/color_white"
+                android:textSize="24sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_32dp"
+                android:hint="@string/label_login_email"
+                android:textColorHint="@color/color_white">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_transparent"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Feby Kustiani" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@color/color_white" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_login_password"
+                android:textColorHint="@color/color_white">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_transparent"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Feby Kustiani" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@color/color_white" />
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:text="@string/label_login_forgot_password"
+                android:textAppearance="@style/TextAppearance.Bold.Semi"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/label_login_btn_submit"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_extra_large_22sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

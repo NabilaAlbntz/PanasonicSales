@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.actvity.store.location.StoreLocationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_gradient"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/acLocation"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/et_min_height_38dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_transparent_edit_text"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/padding_medium"
+            android:hint="@string/label_store_location_hint"
+            android:inputType="text"
+            android:padding="@dimen/padding_8dp"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_blue_soft_et"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="@string/label_store_location_back"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_medium" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_marginBottom="46dp"
+            android:id="@+id/llMarkerLocation"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:textColor="@color/color_white"
+                android:textAppearance="@style/TextAppearance.Bold.Semi"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:id="@+id/btnSetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_btn_store"
+                android:text="@string/label_store_location_submit" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_store_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.actvity.store.survey.history.status.StoreSurveyHistoryStatusFragment">
+
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/rvItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/view_empty"
+        app:layout_error="@layout/view_error"
+        app:layout_progress="@layout/view_progress"
+        app:scrollbarStyle="insideOverlay"
+        tools:listitem="@layout/item_store" />
+
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_min_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_32dp"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:background="@drawable/bg_btn_store"
+        android:paddingLeft="@dimen/padding_24dp"
+        android:paddingRight="@dimen/padding_24dp"
+        android:text="@string/label_survey_history_upload_submit"
+        android:textAppearance="@style/TextAppearance.Bold"
+        android:textColor="@color/color_white" />
+
+
+
+</RelativeLayout>

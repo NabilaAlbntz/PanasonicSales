@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.actvity.store.item.StoreItemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnSubmit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_medium">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_profile_password_current"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etPasswordCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Toko Rahayu Elektronik" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_profile_password_new"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etPasswordNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Toko Rahayu Elektronik" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_profile_password_retype"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etPasswordRetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Toko Rahayu Elektronik" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="@dimen/btn_min_width"
+        android:layout_height="@dimen/btn_min_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/bg_btn_store"
+        android:text="@string/label_profile_password_submit"
+        android:textAppearance="@style/TextAppearance.Bold"
+        android:textColor="@color/color_white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Pogumedia Client</string>
+
+    <string name="label_login_title">Please Login Using Your Email</string>
+    <string name="label_login_email">EMAIL</string>
+    <string name="label_login_password">PASSWORD</string>
+    <string name="label_login_forgot_password">Forgot Your Password?</string>
+    <string name="label_login_btn_submit">Login</string>
+
+    <string name="label_forgot_title">Please Enter an Email to Get a New Password</string>
+    <string name="label_forgot_email">EMAIL</string>
+    <string name="label_forgot_btn_submit">Send Email</string>
+
+    <string name="label_home_sub_title">Monitoring Maintenance Signage</string>
+    <string name="label_home_store_new">Add New Store</string>
+    <string name="label_home_hint_et">Type Store Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="label_store_notice_title">To add a new store, please complete the form below!</string>
+    <string name="label_store_name">STORE NAME</string>
+    <string name="label_store_province">Province</string>
+    <string name="label_store_district">City</string>
+    <string name="label_store_address">ADDRESS</string>
+    <string name="label_store_product">Product</string>
+    <string name="label_store_location">Pin Location</string>
+    <string name="label_store_pic">STORE PIC</string>
+    <string name="label_store_phone_number">PHONE NUMBER</string>
+    <string name="label_store_submit"><![CDATA[ADD & SURVEY]]></string>
+
+    <string name="label_store_visit_title">Check In</string>
+    <string name="label_store_visit_submit">Check In</string>
+
+    <string name="label_store_location_back">BACK</string>
+    <string name="label_store_survey_notice_title">To complete the survey, please complete the form below!</string>
+    <string name="label_store_survey_actual_picture">Actual Picture</string>
+    <string name="label_store_survey_upload_picture">Click to Upload Picture</string>
+    <string name="label_store_survey_type_board">TYPE OF SIGNBOARD</string>
+    <string name="label_store_survey_product">PRODUCT</string>
+    <string name="label_store_survey_project_banner">STORE PROJECT BANNER</string>
+    <string name="label_store_survey_size_banner">SIZE BANNER (OPTIONAL)</string>
+    <string name="label_store_survey_length">LENGTH</string>
+    <string name="label_store_survey_width">WIDTH</string>
+    <string name="label_store_survey_side">SIDE</string>
+    <string name="label_store_survey_type_request">TYPE OF REQUEST</string>
+    <string name="label_store_survey_note">NOTE</string>
+    <string name="label_store_survey_note_hint">Type your note here</string>
+    <string name="label_store_survey_submit"><![CDATA[SUBMIT & CHECK-OUT]]></string>
+    <string name="label_store_survey_dimension">cm</string>
+    <string name="label_store_survey_history_date_of_survey">DATE OF SURVEY</string>
+    <string name="label_store_survey_history_time_of_survey">TIME</string>
+    <string name="label_store_empty_title">No Store List</string>
+    <string name="label_store_empty_desc">Sorry, you do not have a store list for now. Please click the "ADD NEW STORE" button to add a store.</string>
+    <string name="label_store_empty_desc_2">Sorry, you do not have a store list for now</string>
+    <string name="label_store_item_select_province">Select Province</string>
+    <string name="label_store_item_select_city">Select City</string>
+    <string name="label_store_item_select_product">Select Product</string>
+    <string name="label_store_item_title">Add New Store</string>
+
+    <string name="label_empty_form">Please complete the form</string>
+    <string name="label_error">Something Wrong</string>
+    <string name="label_dialog_ok">OK</string>
+    <string name="label_dialog_cancel">Cancel</string>
+    <string name="label_dialog_yes">Yes</string>
+    <string name="label_dialog_no">No</string>
+    <string name="label_dialog_title">Notification</string>
+    <string name="label_dialog_forgot_success">The new password has been successfully sent to your email. Please open an email to see your new password</string>
+    <string name="label_dialog_forgot_success_title">Email Successfully Sent</string>
+    <string name="alert_close_app">Please press back again to exit</string>
+    <string name="label_store_search_result">Showing %d search results</string>
+    <string name="label_profile_change_password_title">Change Password</string>
+    <string name="label_refresh_data_title">Refresh Data</string>
+    <string name="label_home_title">Home</string>
+    <string name="label_alert_refresh_data">do you want to update the data ?</string>
+    <string name="label_alert_account_logout">Are you sure you want to quit ?</string>
+    <string name="label_alert_sync_required">you have survey data that has not been synchronized. please synchronize first</string>
+    <string name="label_alert_store_visit_force_check_in">Currently you are outside the maximum radius of Check-In. Do you want to check in now ?</string>
+    <string name="label_alert_store_survey_submit">Are You Sure to Submit Survey and Checkout?</string>
+    <string name="label_alert_store_survey_submitted">Survey has been submit</string>
+    <string name="label_alert_store_survey_submitted_draft">Survey has been save to draft</string>
+
+
+
+    <string name="label_survey_history_title">Survey History</string>
+    <string name="label_survey_history_select_project_banner">Select Store Project Banner</string>
+    <string name="label_survey_history_select_sign_board">Select Type of Signboard</string>
+    <string name="label_survey_history_select_type_request">Select Type of Request</string>
+    <string name="label_survey_history_upload_submit">Upload Data</string>
+
+    <string name="label_store_survey_title">Survey Form</string>
+    <string name="label_store_survey_history_title">Survey Details</string>
+
+    <string name="label_profile_password_submit">Save</string>
+    <string name="label_profile_password_current">CURRENTLY PASSWORD</string>
+    <string name="label_profile_password_new">NEW PASSWORD</string>
+    <string name="label_profile_password_retype">RETYPE NEW PASSWORD</string>
+    <string name="label_alert_profile_password_retype">New Password does not match</string>
+    <string name="label_alert_profile_password_dialog">Password Successfully Updated</string>
+
+
+    <string name="label_store_item_add_location">Add pin location</string>
+    <string name="label_permission_denied_location">Location Permission denied</string>
+    <string name="label_dialog_location_title">Location Alert</string>
+    <string name="label_dialog_location_desc">Please on location of your device. To get your current Address.</string>
+    <string name="label_store_location_submit">Set Location</string>
+    <string name="label_store_location_hint">Type Location, Province, or City</string>
+    <string name="label_alert_store_visit_waiting_location">waiting your location or store</string>
+
+    <string name="label_survey_history_uploaded_title">Uploaded</string>
+    <string name="label_survey_history_draft_title">Draft</string>
+    <string name="label_survey_history_empty_title">Survey Empty List</string>
+    <string name="label_survey_history_empty_desc">No tasks can be displayed at this time.</string>
+
+    <string name="label_alert_network_timeout">Your request cannot be processed because the network is unstable. Please try again</string>
+    <string name="label_alert_network_error_no_connection">Your request cannot be processed because of a network error. Please try again</string>
+    <string name="label_refresh_data_success_title">Data successfully updated</string>
+    <string name="label_history_task_status_tugas">Status Survey</string>
+    <string name="label_sign_board_optional">TYPE OF SIGNBOARD</string>
+    <string name="label_sign_product_optional">PRODUCT</string>
+    <string name="label_sign_project_banner_optional">STORE PROJECT BANNER</string>
+    <string name="label_sign_type_request_optional">TYPE OF REQUEST</string>
+</resources>

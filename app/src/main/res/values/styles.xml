@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_grey_soft</item>
+        <item name="android:windowBackground">@color/color_white</item>
+        <item name="colorControlNormal">@color/color_white</item>
+    </style>
+
+    <style name="AppTheme2" parent="AppTheme">
+        <item name="colorAccent">@color/color_white</item>
+    </style>
+
+    <style name="TextAppearance.Bold" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="TextAppearance.Bold.Extra" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_extra_bold</item>
+        <item name="fontFamily">@font/open_sans_extra_bold</item>
+    </style>
+
+    <style name="TextAppearance.Light" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="TextAppearance.Regular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="TextAppearance.Bold.Semi" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+</resources>

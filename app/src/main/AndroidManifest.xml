@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pogumedia.panasonic.sales">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Core"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher_pogu"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_pogu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+
+        <provider
+            android:name=".helper.image.GenericFileProvider"
+            android:authorities="${applicationId}.BaseActivity"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBwJL6ivBvEiiLNaWPf5tOmQWknOaZV2Fs" />
+
+        <service android:name=".service.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".ui.actvity.main.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.actvity.login.LoginActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".ui.actvity.forgot.ForgotActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".ui.actvity.store.visit.StoreVisitActivity" />
+        <activity android:name=".ui.actvity.store.item.StoreItemActivity" />
+        <activity android:name=".ui.actvity.store.location.StoreLocationActivity" />
+        <activity android:name=".ui.actvity.store.survey.item.StoreSurveyItemActivity" />
+        <activity android:name=".ui.actvity.store.search.StoreSearchActivity" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="pogumedia.panasonic.sales.ui.actvity.store.survey.history.search.StoreSurveyHistorySearchActivity" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="48dp"
+        android:id="@+id/fl_container_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivStateError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_error_connection_or_server"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitleMessageError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.Regular"
+        android:textColor="#616161"
+        android:textStyle="bold"
+        android:text="@string/label_error" />
+
+
+    <TextView
+        android:id="@+id/tvDescriptionError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.Regular"
+        android:textColor="#364E56"
+        tools:text="Tidak ada produk yangasdn;asdn;asndas;dnsadna bisa ditampilkan untuk saat ini. Silakan klik icon “ + “ menambahkan produk" />
+
+    <Button
+        android:id="@+id/btnRetryError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/bg_btn_store"
+        android:paddingBottom="@dimen/padding_8dp"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/padding_8dp"
+        android:text="Retry"
+        android:textColor="@color/color_white"
+        android:visibility="visible" />
+
+
+</LinearLayout>

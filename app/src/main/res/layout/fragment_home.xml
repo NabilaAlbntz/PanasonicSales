@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.actvity.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/llContentHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_gradient"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:text="Pogumedia Client"
+            android:textAppearance="@style/TextAppearance.Regular"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/label_home_sub_title"
+            android:textAppearance="@style/TextAppearance.Bold.Semi"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_extra_large" />
+
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_min_height_38dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_transparent_edit_text"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/padding_medium"
+            android:focusable="false"
+            android:hint="@string/label_home_hint_et"
+            android:inputType="text"
+            android:longClickable="false"
+            android:padding="@dimen/padding_8dp"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/color_blue_soft_et"
+            android:textSize="@dimen/text_small" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddStore"
+        android:layout_width="@dimen/btn_min_width"
+        android:layout_height="@dimen/btn_min_height"
+        android:layout_below="@id/llContentHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/bg_btn_store"
+        android:text="@string/label_home_store_new"
+        android:textAppearance="@style/TextAppearance.Bold"
+        android:textColor="@color/color_white" />
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/rvItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnAddStore"
+        app:layout_empty="@layout/view_empty"
+        app:layout_error="@layout/view_error"
+        app:layout_progress="@layout/view_progress"
+        app:scrollbarStyle="insideOverlay"
+        tools:listitem="@layout/item_store" />
+
+
+</RelativeLayout>

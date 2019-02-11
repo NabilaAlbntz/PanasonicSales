@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_btn_rounded_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_no_store" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_state"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:text="@string/label_dialog_title"
+        android:textAppearance="@style/TextAppearance.Regular"
+        android:textColor="#45554A"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/label_dialog_forgot_success"
+        android:textAppearance="@style/TextAppearance.Regular"
+        android:textColor="#364E56"
+        android:textSize="@dimen/text_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_negative"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_btn_store"
+            android:gravity="center"
+            android:minWidth="112dp"
+            android:text="@string/label_dialog_cancel"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.Regular"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_small" />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_positive"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_store"
+            android:gravity="center"
+            android:minWidth="112dp"
+            android:text="@string/label_dialog_ok"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.Regular"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_small" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

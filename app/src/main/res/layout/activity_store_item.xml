@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.actvity.store.item.StoreItemActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_store_notice_title"
+                android:textAppearance="@style/TextAppearance.Bold.Semi"
+                android:textColor="@color/color_grey_dark"
+                android:textSize="@dimen/text_medium" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_store_name"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etStoreName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Toko Rahayu Elektronik" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_province"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:minHeight="@dimen/height_spinner"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/padding_8dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_district"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:minHeight="@dimen/height_spinner"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/padding_8dp" />
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_store_address"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etStoreAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Toko Rahayu Elektronik" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_product"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spStoreProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:minHeight="@dimen/height_spinner"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/padding_8dp" />
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_sign_product_optional"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etProductOptional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:paddingRight="@dimen/padding_24dp"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_store_location"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_soft"
+                    android:textSize="@dimen/text_extra_small" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="@dimen/margin_8dp">
+
+                    <FrameLayout
+                        android:id="@+id/flMapLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible">
+
+                        <fragment
+                            android:id="@+id/fMap"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAddLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_btn_rounded_dotted_grey"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivAddLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_add_pin_location" />
+
+                        <TextView
+                            android:id="@+id/tvAddLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_8dp"
+                            android:text="@string/label_store_item_add_location"
+                            android:textAppearance="@style/TextAppearance.Regular"
+                            android:textColor="@color/color_blue" />
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_store_pic"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etStorePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="text"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Toko Rahayu Elektronik" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/label_store_phone_number"
+                android:textColorHint="@color/color_grey_soft">
+
+                <EditText
+                    android:id="@+id/etStorePhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_fill_edit_text"
+                    android:inputType="phone"
+                    android:minHeight="@dimen/et_min_height"
+                    android:textAppearance="@style/TextAppearance.Bold.Semi"
+                    android:textColor="@color/color_grey_dark"
+                    android:textSize="@dimen/text_small"
+                    tools:text="Toko Rahayu Elektronik" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="@dimen/btn_min_width"
+                android:layout_height="@dimen/btn_min_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_32dp"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/bg_btn_store"
+                android:text="@string/label_store_submit"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:textColor="@color/color_white" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
